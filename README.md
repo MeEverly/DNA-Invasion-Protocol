@@ -1,5 +1,5 @@
 # DNA-Invasion-Protocol
-Companion R script to a published protocol (see below for DOI). Handles data visualization and C50 calculations for Dose-Response Invasion Assay experiments.
+Companion R script to a published protocol (see below for DOI). Handles data visualization and C50 calculations for Dose-Response Invasion Assay experiments. 
 
 This repository contains R code used for data analysis in the protocol:
 **An electrophoretic mobility shift assay with chemiluminescent readout to evaluate DNA-targeting oligonucleotide-based probes**  
@@ -11,6 +11,9 @@ ORCID: https://orcid.org/0009-0003-5689-0700
 - `DR_Script.R`: Main analysis script
 - `README.md`: Project overview
 - `LICENSE`: License for usage and distribution
+
+## Beginner-Friendly
+This script is designed to be accessible to users who are new to R. It includes extensive comments explaining the functions of most lines, with clear indications of where to modify the code for your own data.
 
 ## Requirements
 - R version >= 4.x
