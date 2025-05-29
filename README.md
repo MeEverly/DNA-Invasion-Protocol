@@ -35,3 +35,6 @@ Please credit the author and refer to this repository when using or adapting the
 
 ## License
 This project is licensed under the MIT License (https://opensource.org/licenses/MIT). See the LICENSE file for details.
+
+## Keywords
+dose-response, data-visualization, electrphoretic mobility shift assay, EMSA, DNA invasion, DNA hybridization, C50 value, non-linear line fitting
