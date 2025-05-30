@@ -19,8 +19,10 @@
 # BEFORE START
   # Compile data into a CSV file
   # Ensure your CSV file has 'Dose', 'Response', 'sd'(for standard deviation), and 'Probe' column headers as directed in Step 6.1 of the associated protocol
-  # Set your working directory to where the file is located and enter your file name (line 47-48)
-  # Reveal lines 34-38 (i.e., delete "#") to install the required packages. Once installed, replace the #'s to disable their execution when running the code again.
+  # Set your working directory to where the file is located and enter your file name (lines 49-50)
+  # Reveal lines 36-40 (i.e., delete "#") to install the required packages. Once installed, replace the #'s to disable their execution when running the code again.
+  # Use colorspace or ggsci to generate color palettes (optional; lines 92-105)
+  # Costomize chart elements (optional; lines 108-141, 152-154, 163-165, 170-172, 174, 179-180, 192-194, 204-215)
 
 # INFORMATION ON ALGORITHMS & PACKAGES USED HEREIN
   # The purpose of nls.lm is to minimize the sum square of the vector returned by the function fn, by a modification of the Levenberg-Marquardt algorithm. 
@@ -55,7 +57,7 @@ logistic_model <- function(Dose, A, k, C) {
   C + A * (1 - exp(-k * Dose))}
 
 # Starting values for logistic model calculations
-start_values <- list(A = 100, k = 10, C = 0)  # Adjust start values as needed
+start_values <- list(A = 100, k = 10, C = 0)  #Adjust start values as needed
 
 # Function to fit the model and generate predictions for each group
 fit_model_and_predict <- function(group_data) {
@@ -187,12 +189,12 @@ ggplot(data, aes(x = Dose, y = Response, color = Probe, shape = Probe, fill = Pr
   
   # graph labels and legend elements
   labs(
-    title = NULL,                 #graph title (change when needed)
+    title = NULL,                 #graph title (change NULL to 'plot name' when needed)
     x = "[Probe] (μM)",           #x-axis label (change when needed)
-    y = "dsDNA Recognition (%)",  #y-axis label (change when needed)
+    y = "dsDNA Invasion (%)",     #y-axis label (change when needed)
     color = NULL, shape = NULL,   #setting 'color', 'shape', 
-    linetype = NULL, fill = NULL, #'linetype', 'fill', 
-    linewidth = NULL              #and 'linewidth' to 'NULL' removes unnecessary legend elements
+    linetype = NULL, fill = NULL,   #'linetype', 'fill', 
+    linewidth = NULL                #and 'linewidth' to 'NULL' removes unnecessary legend elements
   )+
   
   # graph theme/appearance
@@ -228,4 +230,4 @@ data %>%
   }) %>%
   print()
 
-##Export plot as an SVG or TIFF file for best image quality 
+## Export plot as an SVG or TIFF file for best image quality. Import SVG into software like Inkscape or Adobe Illustrator to format publishable figures. 
