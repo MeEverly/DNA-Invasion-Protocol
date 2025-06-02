@@ -31,7 +31,8 @@ This script is designed to be accessible to users who are new to R. It includes 
 4. Run the script.
 
 ## Citation
-Please credit the author and refer to this repository when using or adapting the code.
+Please credit the author and refer to this repository when using or adapting the code with the following citation:
+Michaela E. Everly. (2025). MeEverly/DNA-Invasion-Protocol: Release for DR_Script (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.15579929
 
 ## License
 This project is licensed under the MIT License (https://opensource.org/licenses/MIT). See the LICENSE file for details.
