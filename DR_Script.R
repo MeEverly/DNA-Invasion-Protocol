@@ -3,7 +3,8 @@
 # Description:  This script was written to generate dose-response curves and calculate C50 values (in association with the published protocol, linked below)
 # Author:       Michaela E. Everly
 # ORCID:        https://orcid.org/0009-0003-5689-0700
-# Protocol DOI: 
+# Code DOI:     https://doi.org/10.5281/zenodo.15579929 
+# Protocol DOI: (to be added soon)
 # Version:      1.0
 # Date:         May 20, 2025
 # License:      MIT License
